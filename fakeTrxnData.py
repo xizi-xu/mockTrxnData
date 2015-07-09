@@ -13,7 +13,7 @@ def numberLenCheck(value, length):
 fake = Factory.create()
 result = []
 
-with open('Result', 'wb') as csvfile:
+with open('outputfile', 'wb') as csvfile:
 	mywriter = csv.writer(csvfile, delimiter = "\001")
 	# schema:
 	# 'acct_id', 'stmt_dt', 'trxn_dt', 'dbt_crd_ind', 'mrcht_cat', 'amt_trxn', 'trxn_cd'
